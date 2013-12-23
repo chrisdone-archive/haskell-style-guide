@@ -211,8 +211,7 @@ data Foo = Foo
   { fooBar :: X -- ^ Bar stuff.
   , fooMu  :: Y -- ^ Mu stuff.
   , fooZot :: Z -- ^ Zot stuff.
-  }
-  deriving (B)
+  } deriving (B)
 ```
 
 ## Expressions
