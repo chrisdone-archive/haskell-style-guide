@@ -443,7 +443,7 @@ fooBarMu =
 
 ## Collections
 
-Write tuples, lists and records without commas:
+Write tuples, lists and records without spaces:
 
 ``` haskell
 (a,b,c)
