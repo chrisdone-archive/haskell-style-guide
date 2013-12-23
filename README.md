@@ -390,7 +390,7 @@ main = go
     go = print "Hello!"
 ```
 
-## Let expressions:
+## Let expressions
 
 Never use let-expressions in a right-hand-side:
 
