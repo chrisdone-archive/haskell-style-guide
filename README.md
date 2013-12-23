@@ -73,8 +73,8 @@ import Foo.Bob
 
 import Control.Monad
 import Data.Text
-import Data.Maybe
 import Data.List
+import Data.Maybe
 import System.IO
 import System.Process
 ```
