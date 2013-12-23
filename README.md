@@ -11,6 +11,9 @@ Emacs with
 [structured-haskell-mode](https://github.com/chrisdone/structured-haskell-mode),
 which opinionatedly applies this style guide automatically.
 
+I may write an automatic formatter with HSE to formalize this style at
+some point.
+
 ## Indentation
 
 Indent two spaces. No tabs.
