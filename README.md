@@ -450,7 +450,7 @@ Write tuples, lists and records without spaces:
 
 [a,b,c]
 
-{x=a,y=b,z=c}
+{x = a,y = b,z = c}
 ```
 
 Layout multi-line tuples, lists and records with prefix comma:
@@ -464,9 +464,9 @@ Layout multi-line tuples, lists and records with prefix comma:
 ,b
 ,c]
 
-{x=a
-,y=b
-,z=c}
+{x = a
+,y = b
+,z = c}
 ```
 
 # If
