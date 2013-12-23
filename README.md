@@ -1,11 +1,26 @@
 haskell-style-guide
 ===================
 
-A document describing how I like Haskell code to be written.
+A document describing how I like Haskell code to be written. This is
+how I write my code and expect code submitted to my projects to be
+in. I'll probably link this to you if I don't sound particularly happy
+with a patch you sent me.
+
+Tip: this guide is very easy to follow when you have an editor like
+Emacs with
+[structured-haskell-mode](https://github.com/chrisdone/structured-haskell-mode),
+which opinionatedly applies this style guide automatically.
 
 ## Indentation
 
-Indent two spaces.
+Indent two spaces. No tabs.
+
+## Line length
+
+Prefer 80 columns, but don't waste your time re-working code just to
+fit within it. There, 120 is acceptable too. Don't try to shoehorn
+code that shouldn't be broken up (like long strings) onto multiple
+lines. Let them be.
 
 ## Modules
 
@@ -28,8 +43,8 @@ coming on the line after.
 module Foo
   (a
   ,b
-  ,c)
-  where
+  ,c
+  ) where
 ```
 
 ## Imports
@@ -98,6 +113,8 @@ import Data.Text (Text)
 Unless they overlap, in which case it will be `T.Text`.
 
 ## Declarations
+
+All declarations should be surrounded by a blank line.
 
 Always order declarations in the order that they're used, top-down:
 
@@ -449,4 +466,15 @@ Layout multi-line tuples, lists and records with prefix comma:
 {x=a
 ,y=b
 ,z=c}
+```
+
+# If
+
+*Always* line up `then` and `else` with the condition when laying out `if` on multiple
+lines:
+
+``` haskell
+if x
+   then y
+   else x
 ```
