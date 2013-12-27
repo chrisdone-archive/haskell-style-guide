@@ -116,7 +116,9 @@ Unless they overlap, in which case it will be `T.Text`.
 
 ## Declarations
 
-All declarations should be surrounded by a blank line.
+All declarations should be surrounded by a blank line. Declarations
+should not have blank lines in them. If your code is so complicated,
+split it up into names.
 
 Always order declarations in the order that they're used, top-down:
 
@@ -163,7 +165,6 @@ Is improved by:
 main =
   do openConnection
      makeCake
-
   where openConnection = foo bar y …
         makeCake = zot bob y …
         y = z * zz
@@ -177,7 +178,6 @@ When the code is larger, this is further improved by:
 main =
   do openConnection
      makeCake
-
   where y = z * zz
 
 openConnection y = foo bar y …
@@ -363,7 +363,6 @@ This is okay.
 
 ``` haskell
 foo = meaning zot bob
-
   where meaning = foo . bar . mu
 ```
 
@@ -371,11 +370,12 @@ This is better.
 
 ## Where clauses
 
-Always indent where clauses two spaces with an empty line before them:
+Always indent where clauses two spaces:
 
 ``` haskell
-main = go
-
+main =
+  do hello
+     world
   where go = print "Hello!"
 ```
 
@@ -383,7 +383,6 @@ Sometimes it's okay to also put a newline after the where and indent:
 
 ``` haskell
 main = go
-
   where
     go = print "Hello!"
 ```
@@ -401,7 +400,6 @@ Instead prefer a `where`:
 
 ``` haskell
 main = x
-
   where x = y
 ```
 
