@@ -16,7 +16,8 @@ some point.
 
 ## Indentation
 
-Indent two spaces. No tabs.
+Indent two spaces. No tabs. Four spaces is also okay, but make sure to
+configure it in your editor so that it's enforced consistently.
 
 ## Line length
 
@@ -411,6 +412,19 @@ main = do a <- return 1
               y = x * a
           print y
 ```
+
+When in a `do`, `let … in` must be laid out differently:
+
+``` haskell
+main = do a <- return 1
+          let x = 123
+              y = x * a
+              in print (x * y)
+          print y
+```
+
+Align the `in` with the other children, like in `if … then … else`
+syntax.
 
 ## Salvaging space
 
