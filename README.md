@@ -294,6 +294,17 @@ len =
      mu
 ```
 
+There is also the extreme space-saving layout following the general
+parent-child layout guide:
+
+``` haskell
+len =
+  do
+    foo
+    bar
+    mu
+```
+
 Never use `(>>)` where `do` will do:
 
 ``` haskell
