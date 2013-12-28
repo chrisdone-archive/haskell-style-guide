@@ -160,7 +160,7 @@ main =
 
 (Imagine longer code.)
 
-Is improved by:
+This is improved by:
 
 ``` haskell
 main =
