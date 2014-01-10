@@ -294,6 +294,13 @@ len =
      mu
 ```
 
+or
+
+``` haskell
+$(do runIO (putStrLn "Hello, World!")
+     return [])
+```
+
 There is also the extreme space-saving layout following the general
 parent-child layout guide:
 
