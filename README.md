@@ -178,8 +178,8 @@ When the code is larger, this is further improved by:
 
 ``` haskell
 main =
-  do openConnection
-     makeCake
+  do openConnection y
+     makeCake y
   where y = z * zz
 
 openConnection y = foo bar y …
