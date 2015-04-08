@@ -6,18 +6,17 @@ how I write my code and expect code submitted to my projects to be
 in. I'll probably link this to you if I don't sound particularly happy
 with a patch you sent me.
 
-Tip: this guide is very easy to follow when you have an editor like
+This style guide is formally encoded by the [hindent](https://github.com/chrisdone/hindent) 
+tool in the `chris-done` style, which I use for all the code I write.
+
+This guide is also very easy to follow when you have an editor like
 Emacs with
 [structured-haskell-mode](https://github.com/chrisdone/structured-haskell-mode),
 which opinionatedly applies this style guide automatically.
 
-I may write an automatic formatter with HSE to formalize this style at
-some point.
-
 ## Indentation
 
-Indent two spaces. No tabs. Four spaces is also okay, but make sure to
-configure it in your editor so that it's enforced consistently.
+Indent two spaces. No tabs. 
 
 ## Line length
 
