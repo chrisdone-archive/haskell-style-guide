@@ -361,13 +361,13 @@ foo = x y * z * y
 If you can't resist using `($)`, never mix it with `(.)` like this:
 
 ``` haskell
-foo = foo . bar . mu $ zot bob
+foo = foo . bar . mu $ zot
 ```
 
 Use parens:
 
 ``` haskell
-foo = (foo . bar . mu) zot bob
+foo = (foo . bar . mu) zot
 ```
 
 (Tee hee!)
