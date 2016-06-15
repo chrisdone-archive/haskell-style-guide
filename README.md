@@ -370,8 +370,6 @@ Use parens:
 foo = (foo . bar . mu) zot
 ```
 
-(Tee hee!)
-
 ## Composition
 
 Prefer to use composition where functions are expected, not
